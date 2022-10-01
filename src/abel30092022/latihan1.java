@@ -14,16 +14,28 @@ import java.io.InputStreamReader;
  * @author User
  */
 public class latihan1 {
-    public static void main( String[] args ){
-        BufferedReader dataIn = new BufferedReader(new
-        InputStreamReader( System.in) );
-    String name = "";
-    System.out.print("Please Enter Your Name:");
-    try{
-    name = dataIn.readLine();
-    }catch( IOException e ){
-    System.out.println("Error!");
-    }
-    System.out.println("Hello " + name +"!");
-}
+  public static void main( String[] args ){
+
+ BufferedReader dataIn = new BufferedReader(new
+ InputStreamReader( System.in) );
+ String name = "";
+ String address = "";
+ String jurusan = "";
+ 
+ try{
+ System.out.print("Please Enter Your Name:");
+ name = dataIn.readLine();
+ System.out.print("Please Enter Your Address:");
+ address = dataIn.readLine();
+ System.out.print("Please Enter Your Jurusan:");
+ jurusan = dataIn.readLine();
+ 
+ }catch( IOException e ){
+ System.out.println("Error!");
+ }
+ System.out.println("Hello " + name +"!");
+ System.out.println("Address :  " + address);
+ System.out.println("Jurusan :  " + jurusan);
+ 
+ }
 }
